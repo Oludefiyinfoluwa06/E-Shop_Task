@@ -1,0 +1,37 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+form.search {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #3c3c3c;
+    border-radius: 50px;
+    gap: 5px;
+}
+
+form.search input {
+    border: none;
+    outline: none;
+}
+
+form.search button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
