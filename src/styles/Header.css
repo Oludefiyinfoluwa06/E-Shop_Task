@@ -9,24 +9,3 @@ header {
     padding: 20px 50px;
     text-align: center;
 }
-
-.categories {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.categories .category {
-    padding: 4px;
-    border: 1px solid #3c3c3c;
-    color: #fff;
-}
-
-.categories .category:hover {
-    color: #222;
-    background: #fff;
-    transition: .5s;
-}

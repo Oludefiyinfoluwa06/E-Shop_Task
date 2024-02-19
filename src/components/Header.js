@@ -1,12 +1,11 @@
 import React from 'react';
 import '../styles/Header.css';
-import Categories from './Categories';
 
-const Header = () => {
+const Header = ({ title, content }) => {
     return (
         <header>
-            <h1>Shop in style</h1>
-            <Categories />
+            <h1>{title}</h1>
+            <p>{content}</p>
         </header>
     );
 }

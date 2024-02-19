@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
-import Products from '../components/Products';
+import Categories from '../components/Categories';
 
-const Home = () => {
+const Category = () => {
     const navigate = useNavigate();
 
     const user = JSON.parse(localStorage.getItem('user'));
@@ -16,10 +16,12 @@ const Home = () => {
 
     return (
         <>
-            <Header title='Shop in style' content='Begin your purchases with us and find high quality products' />
-            <Products token={user.token} />
+            <Header title='Categories' content='Explore categories for all our products' />
+            <div className="categories">
+                <Categories token={user.token} />
+            </div>
         </>
     );
 }
 
-export default Home;
+export default Category;

@@ -7,6 +7,19 @@ nav {
     flex-wrap: wrap;
 }
 
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+nav img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
 nav ul {
     display: flex;
     align-items: center;

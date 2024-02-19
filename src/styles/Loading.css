@@ -1,0 +1,28 @@
+.loading {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.loading span {
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: #daa520;
+    transform: rotate(calc(var(--i) * (360deg / 10))) translate(35px);
+    opacity: 0;
+    animation: load 1s linear infinite;
+    animation-delay: calc(var(--i) * 0.1s);
+}
+
+@keyframes load {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
