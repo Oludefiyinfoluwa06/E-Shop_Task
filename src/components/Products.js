@@ -31,7 +31,7 @@ const Products = ({ token }) => {
                 }
             })
             .finally(() => setIsLoading(false));
-    }, [navigate, products, token]);
+    }, [navigate, token]);
 
     const handleViewDetails = (productId) => {
         setSelectedProductId(productId);
